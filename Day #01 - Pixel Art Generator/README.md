@@ -2,6 +2,8 @@
 
 ### Pixel Art Generator
 
+
+
 # Pixel Art Generator
 
 ![Pixel Art Generator](screenshot.jpg)
@@ -13,6 +15,7 @@
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Live Demo](#live-demo)
 
 ## Introduction
 The **Pixel Art Generator** is a web-based tool that allows users to create pixel art using a customizable grid. It is an intuitive and easy-to-use application where you can draw, erase, and color pixels to create your unique designs.
@@ -27,15 +30,15 @@ The **Pixel Art Generator** is a web-based tool that allows users to create pixe
 ## Getting Started
 ### Prerequisites
 To run the Pixel Art Generator, you need a modern web browser.
-
+```
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/pixel-art-generator.git
+   git clone https://github.com/Moiz-CodeByte/100-days-of-javascript.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd pixel-art-generator
+   cd 100-days-of-javascript/Day\ \#01\ -\ Pixel\ Art\ Generator
    ```
 3. Open `index.html` in your web browser.
 
@@ -70,8 +73,11 @@ Contributions are welcome! If you have any ideas, suggestions, or improvements, 
 ## License
 This project is open-source and available under the [MIT License](LICENSE).
 
+## Live Demo
+You can see the Pixel Art Generator live at [Link](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2301%20-%20Pixel%20Art%20Generator/)
+
 ---
 
 Enjoy creating your pixel art!
 
-For any questions or support, please contact [hello@abdulmoiz.net](mailto:hello@abdulmoiz.net).
+For any questions or support, please contact at [hello@abdulmoiz.net](mailto:hello@abdulmoiz.net).
