@@ -4,7 +4,7 @@
 
 # Pixel Art Generator
 
-![Pixel Art Generator](screenshot.jpg)
+![Pixel Art Generator](screenshot.png)
 
 ## Table of Contents
 - [Introduction](#introduction)
