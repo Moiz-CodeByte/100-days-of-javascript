@@ -44,11 +44,34 @@ To run the Chatbot, you need a modern web browser.
    ```
 3. Open `index.html` in your web browser.
 
+### Generating Groq API Key
+1. Visit the [Groq API Key Generation](https://www.groq.com/api-keys) page.
+2. Log in or create an account.
+3. Generate a new API key.
+4. Copy the generated API key.
+
+5. Replace `YOUR-GROQ-API-KEY` in `script.js` with your Groq API key:
+   ```javascript
+   const options = {
+       method: 'POST',
+       headers: {
+           'content-type': 'application/json',
+           'Authorization': 'Bearer YOUR-GROQ-API-KEY',
+       },
+       body: JSON.stringify({
+           messages: [{ role: 'user', content: message }],
+           model: 'llama3-8b-8192'
+       })
+   };
+   ```
+
+
+
 ## Usage
 1. Type your message in the input field at the bottom of the chat interface.
 2. Click the **Send** button or press **Enter** to send your message.
 3. The bot will respond to your message after a short delay.
-4. If you type "developer", the bot will provide information about the developer.
+
 
 ## Contributing
 Contributions are welcome! If you have any ideas, suggestions, or improvements, feel free to create a pull request or open an issue.
@@ -76,7 +99,3 @@ This project is open-source and available under the [MIT License](LICENSE).
 You can see the CodeByte gpt bot live at [Link](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%232%20-%20CodeByte%20GPT%20Bot/)
 
 ---
-
-Enjoy chatting with your bot!
-
-For any questions or support, please contact at [hello@abdulmoiz.net](mailto:hello@abdulmoiz.net).
