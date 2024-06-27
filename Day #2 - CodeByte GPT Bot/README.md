@@ -32,7 +32,7 @@ The **Chatbot** is a web-based application that allows users to interact with an
 ## Getting Started
 ### Prerequisites
 To run the Chatbot, you need a modern web browser.
-```
+
 ### Installation
 1. Clone the repository:
    ```bash
