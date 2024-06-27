@@ -1,6 +1,6 @@
 # 100 days of javascript
 ##  [Pixel Art Generator](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2301%20-%20Pixel%20Art%20Generator/)
-##  [CodeByte GPT Bot](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%0232%20-%20CodeByte%20GPT%20Bot/)
+##  [CodeByte GPT Bot](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%02302%20-%20CodeByte%20GPT%20Bot/)
 
 
 ## Live Demo
