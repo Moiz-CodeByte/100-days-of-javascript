@@ -36,11 +36,11 @@ To run the Chatbot, you need a modern web browser.
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/chatbot.git
+   git clone https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%232%20-%20CodeByte%20GPT%20Bot.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd chatbot
+   cd Day%20%232%20-%20CodeByte%20GPT%20Bot
    ```
 3. Open `index.html` in your web browser.
 
