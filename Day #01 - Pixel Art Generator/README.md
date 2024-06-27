@@ -30,7 +30,7 @@ The **Pixel Art Generator** is a web-based tool that allows users to create pixe
 ## Getting Started
 ### Prerequisites
 To run the Pixel Art Generator, you need a modern web browser.
-```
+
 ### Installation
 1. Clone the repository:
    ```bash

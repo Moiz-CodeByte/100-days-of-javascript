@@ -1,7 +1,5 @@
-# Day #2
+# Day #02
 
-### CodeByte GPT Bot
-Here is a template for a chatbot project, structured similarly to your Pixel Art Generator project documentation. This includes sections like Introduction, Features, Getting Started, Usage, Contributing, License, and Live Demo.
 
 
 
@@ -36,11 +34,11 @@ To run the Chatbot, you need a modern web browser.
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%232%20-%20CodeByte%20GPT%20Bot.git
+   git clone https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2302%20-%20CodeByte%20GPT%20Bot.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd Day%20%232%20-%20CodeByte%20GPT%20Bot
+   cd Day%20%2302%20-%20CodeByte%20GPT%20Bot
    ```
 3. Open `index.html` in your web browser.
 
@@ -96,6 +94,6 @@ Contributions are welcome! If you have any ideas, suggestions, or improvements, 
 This project is open-source and available under the [MIT License](LICENSE).
 
 ## Live Demo
-You can see the CodeByte gpt bot live at [Link](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%232%20-%20CodeByte%20GPT%20Bot/)
+You can see the CodeByte gpt bot live at [Link](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2302%20-%20CodeByte%20GPT%20Bot/)
 
 ---
