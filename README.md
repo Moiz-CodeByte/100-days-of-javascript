@@ -4,4 +4,4 @@
 
 
 ## Live Demo
-You can see the Projects live at [Link](https://moiz-codebyte.github.io/100-days-of-javascript/)
+You can see the Projects live listing at [Link](https://moiz-codebyte.github.io/100-days-of-javascript/)
