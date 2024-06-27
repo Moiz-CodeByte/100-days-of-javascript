@@ -78,6 +78,5 @@ You can see the Pixel Art Generator live at [Link](https://moiz-codebyte.github.
 
 ---
 
-Enjoy creating your pixel art!
 
 For any questions or support, please contact at [hello@abdulmoiz.net](mailto:hello@abdulmoiz.net).
