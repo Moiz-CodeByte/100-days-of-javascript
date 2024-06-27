@@ -38,7 +38,7 @@ function sendMessage() {
     // appends users message to screen
     appendMessage('user', message);
     userInput.value = '';
-
+//https://console.groq.com/keys
     const options = {
         method: 'POST',
         headers: {
