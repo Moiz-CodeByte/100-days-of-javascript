@@ -73,10 +73,10 @@ Contributions are welcome! If you have any ideas, suggestions, or improvements, 
 This project is open-source and available under the [MIT License](LICENSE).
 
 ## Live Demo
-You can see the Chatbot live at [Link](https://yourusername.github.io/chatbot/)
+You can see the CodeByte gpt bot live at [Link](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%232%20-%20CodeByte%20GPT%20Bot/)
 
 ---
 
 Enjoy chatting with your bot!
 
-For any questions or support, please contact at [your-email@example.com](mailto:your-email@example.com).
+For any questions or support, please contact at [hello@abdulmoiz.net](mailto:hello@abdulmoiz.net).
