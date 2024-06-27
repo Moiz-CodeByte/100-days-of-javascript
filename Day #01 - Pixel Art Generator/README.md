@@ -76,7 +76,9 @@ This project is open-source and available under the [MIT License](LICENSE).
 ## Live Demo
 You can see the Pixel Art Generator live at [Link](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2301%20-%20Pixel%20Art%20Generator/)
 
+
+For any questions or support, please contact at [hello@abdulmoiz.net](mailto:hello@abdulmoiz.net).
+
 ---
 
 
-For any questions or support, please contact at [hello@abdulmoiz.net](mailto:hello@abdulmoiz.net).
