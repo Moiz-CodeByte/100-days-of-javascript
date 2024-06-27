@@ -26,7 +26,7 @@ function sendMessage() {
         // sets a fake timeout that showing loading on send button
         setTimeout(() => {
             // send our message as bot(sender : bot)
-            appendMessage('bot', 'This Source Coded By Reza Mehdikhanlou \nYoutube : @AsmrProg');
+            appendMessage('bot', 'This Source Coded By Abdul Moiz : @abdulmoiz.net');
             // change button icon to default
             buttonIcon.classList.add('fa-solid', 'fa-paper-plane');
             buttonIcon.classList.remove('fas', 'fa-spinner', 'fa-pulse');
