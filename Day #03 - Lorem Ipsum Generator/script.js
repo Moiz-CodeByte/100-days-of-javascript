@@ -25,7 +25,7 @@ function generateText(paragraphs, sentences, words) {
 function generateSentence(wordsCount) {
   var words = ["Lorem", "ipsum", "dolor", "sit", "amet,", "consectetur", "adipiscing", "elit.", "Sed", "lacinia", "mauris", "sed", "fermentum", "convallis.", "Vestibulum", "id", "purus", "a", "felis", "facilisis", "tristique.", "Quisque", "pretium", "placerat", "libero,", "id", "fermentum", "lectus", "iaculis", "eu.", "In", "eleifend", "leo", "ut", "nisi", "facilisis,", "ac", "fringilla", "sapien", "egestas.", "Integer", "bibendum", "pulvinar", "felis,", "eu", "ullamcorper", "augue", "semper", "ac.", "Proin", "auctor", "finibus", "lacinia.", "Suspendisse", "auctor", "nisl", "ut", "enim", "feugiat,", "nec", "varius", "dolor", "venenatis."];
   var sentence = "";
-  var length = Math.floor(Math.random() * (wordsCount - 3)) + 3; // Random sentence length between 3 and wordsCount
+  var length = Math.floor(Math.random() * (wordsCount - 3)) + 3; 
   for (var i = 0; i < length; i++) {
     var word = words[Math.floor(Math.random() * words.length)];
     sentence += word + " ";
@@ -42,7 +42,6 @@ function copyLoremIpsum() {
   if (text.length > 0) {
     navigator.clipboard.writeText(text)
       .then(function() {
-        // User-friendly message
         showUserMessage("Lorem Ipsum text copied to clipboard!", "successcopy");
       })
       .catch(function(error) {

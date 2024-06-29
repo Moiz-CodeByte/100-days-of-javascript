@@ -26,7 +26,7 @@ function sendMessage() {
         // sets a fake timeout that showing loading on send button
         setTimeout(() => {
             // send our message as bot(sender : bot)
-            appendMessage('bot', 'This Source Coded By Abdul Moiz : @abdulmoiz.net');
+            appendMessage('bot', 'This Source Coded By Abdul Moiz : abdulmoiz.net');
             // change button icon to default
             buttonIcon.classList.add('fa-solid', 'fa-paper-plane');
             buttonIcon.classList.remove('fas', 'fa-spinner', 'fa-pulse');
@@ -38,7 +38,13 @@ function sendMessage() {
     // appends users message to screen
     appendMessage('user', message);
     userInput.value = '';
-//https://console.groq.com/keys
+    //https://console.groq.com/keys
+    //Open the link, sign up and generate key.
+    //Replace the [YOUR-GROQ-API-KEY] with your key.
+    //And bang you the response.
+    //Note: This is free account not paid like openai.
+
+
     const options = {
         method: 'POST',
         headers: {

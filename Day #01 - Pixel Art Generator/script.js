@@ -118,7 +118,7 @@ const downloadImage = () => {
         });
 
         let link = document.createElement('a');
-        link.download = 'pixel-art-moiz-codebyte.png';
+        link.download = 'pixel-art-by-moiz-codebyte.png';
         link.href = canvas.toDataURL();
         link.click();
     }).catch(error => {
