@@ -1,27 +1,93 @@
 body {
-    padding: 20px;
-    font-family: 'Open Sans';
-  }
-  h1{
-      font-family: 'Poppins' , 'Open Sans';
-      font-weight: 600;
-  }
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F7592B;
+
+}
+.container{
+  background-color: #fff;
+  width: 80vmin;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
 .user-message {
-position: fixed;
-top: 20px;
-left: 50%;
-transform: translateX(-50%);
-padding: 10px 20px;
-border-radius: 4px;
-font-weight: bold;
-color: #fff;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #fff;
 }
-.successcopy{
-background-color: #767676;
+
+.successcopy {
+  background-color: #767676;
 }
-.reset{
+
+.reset {
   background-color: #DC3545;
 }
+
 .error {
-background-color: #dc3545;
+  background-color: #dc3545;
+}
+
+.container {
+  max-width: 600px;
+  
+  
+ 
+  border-radius: 4px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control-range {
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #F7592B;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-success {
+  background-color: #28a745;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+#output {
+  resize: vertical;
+  width: 100%;
 }

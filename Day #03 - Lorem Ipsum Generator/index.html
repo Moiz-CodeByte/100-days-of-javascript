@@ -1,44 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Lorem Ipsum Generator</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+  <title>Day #3 - Lorem Ipsum Generator | MoizCodeByte</title>
+
 </head>
 <body>
-  <div class="container">
-    <h1>Lorem Ipsum Generator</h1>
-    <form>
-      <div class="form-group">
-        <label for="paragraphs">Number of paragraphs :</label>
-        <b><output for="paragraphs" id="paragraphsOutput">10</output></b>
-        <input type="range" class="form-control-range" id="paragraphs" min="1" max="100" value="10" required>
-       
-      </div>
-      <div class="form-group">
-        <label for="sentences">Average sentences per paragraph :</label> 
-        <b><output for="sentences" id="sentencesOutput">10</output></b>
-        <input type="range" class="form-control-range" id="sentences" min="3" max="25" value="10" required>
-       
-      </div>
-      <div class="form-group">
-        <label for="words">Average words per sentence :</label>
-        <b><output for="words" id="wordsOutput">15</output></b>
-        <input type="range" class="form-control-range" id="words" min="10" max="25" value="15" required>
-        
-      </div>
-      <button type="button" class="btn btn-primary" onclick="generateLoremIpsum()">Generate</button>
-      <button type="button" class="btn btn-secondary" onclick="copyLoremIpsum()">Copy</button>
-      <button type="button" class="btn btn-danger" onclick="resetForm()">Reset</button>
-    </form>
-    <div class="mt-4">
-      <textarea id="output" class="form-control" rows="8" readonly></textarea>
+<div class="container">
+  <h1>Lorem Ipsum Generator </h1>
+
+  <form>
+    <div class="form-group">
+      <label for="paragraphs">Number of paragraphs:</label>
+      <b><output for="paragraphs" id="paragraphsOutput">10</output></b>
+      <input type="range" class="form-control-range" id="paragraphs" min="1" max="100" value="10" required>
     </div>
+    <div class="form-group">
+      <label for="sentences">Average sentences per paragraph:</label> 
+      <b><output for="sentences" id="sentencesOutput">10</output></b>
+      <input type="range" class="form-control-range" id="sentences" min="3" max="25" value="10" required>
+    </div>
+    <div class="form-group">
+      <label for="words">Average words per sentence:</label>
+      <b><output for="words" id="wordsOutput">15</output></b>
+      <input type="range" class="form-control-range" id="words" min="10" max="25" value="15" required>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="generateLoremIpsum()">Generate</button>
+    <button type="button" class="btn btn-secondary" onclick="copyLoremIpsum()">Copy</button>
+    <button type="button" class="btn btn-danger" onclick="resetForm()">Reset</button>
+  </form>
+  <div class="mt-4">
+    <textarea id="output" class="form-control" rows="8" readonly></textarea>
   </div>
-  
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
