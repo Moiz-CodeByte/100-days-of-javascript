@@ -1,3 +1,18 @@
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('paragraphs').addEventListener('input', function() {
+    document.getElementById('paragraphsOutput').textContent = this.value;
+  });
+
+  document.getElementById('sentences').addEventListener('input', function() {
+    document.getElementById('sentencesOutput').textContent = this.value;
+  });
+
+  document.getElementById('words').addEventListener('input', function() {
+    document.getElementById('wordsOutput').textContent = this.value;
+  });
+});
+
+
 function generateLoremIpsum() {
   var paragraphs = parseInt(document.getElementById('paragraphs').value);
   var sentences = parseInt(document.getElementById('sentences').value);
