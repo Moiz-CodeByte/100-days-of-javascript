@@ -21,7 +21,7 @@ h1 {
 
 .user-message {
   position: fixed;
-  top: 100px;
+  top: 80px;
   left: 50%;
   transform: translateX(-50%);
   padding: 10px 20px;
