@@ -1,0 +1,27 @@
+body {
+    padding: 20px;
+    font-family: 'Open Sans';
+  }
+  h1{
+      font-family: 'Poppins' , 'Open Sans';
+      font-weight: 600;
+  }
+.user-message {
+position: fixed;
+top: 20px;
+left: 50%;
+transform: translateX(-50%);
+padding: 10px 20px;
+border-radius: 4px;
+font-weight: bold;
+color: #fff;
+}
+.successcopy{
+background-color: #767676;
+}
+.reset{
+  background-color: #DC3545;
+}
+.error {
+background-color: #dc3545;
+}
