@@ -80,7 +80,4 @@ You can see the Lorem Ipsum Generator live at [Link](https://moiz-codebyte.githu
 
 For any questions or support, please contact at [hello@abdulmoiz.net](mailto:hello@abdulmoiz.net).
 
----
-
-Enjoy generating your Lorem Ipsum text!
 
