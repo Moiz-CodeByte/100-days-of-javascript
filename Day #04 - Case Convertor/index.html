@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Converter</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="container">
+    <div class="form-group">
+      <textarea id="inputText" class="form-control" placeholder="Enter text here..."></textarea>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-secondary" onclick="pasteText()">Paste</button>
+      <button class="btn btn-primary" onclick="convertToUppercase()">Uppercase</button>
+      <button class="btn btn-primary" onclick="convertToLowercase()">Lowercase</button>
+      <button class="btn btn-primary" onclick="convertToSentenceCase()">Sentence Case</button>
+      <button class="btn btn-primary" onclick="convertToTitleCase()">Title Case</button>
+      <button class="btn btn-primary" onclick="convertToMixedCase()">Mixed Case</button>
+    </div>
+    <div class="form-group">
+      <textarea id="outputText" class="form-control" placeholder="Converted text will appear here..." readonly></textarea>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-success" onclick="copyText()">Copy</button>
+      <button class="btn btn-danger" onclick="resetText()">Reset</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
