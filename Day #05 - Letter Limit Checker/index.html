@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Letter Counter</title>
+</head>
+<body>
+   
+    <div class="container ">
+        
+        <form>
+            <div class="mb-4">
+               
+                <textarea class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" id="inputText" rows="5" placeholder="Enter your text here..."></textarea>
+            </div>
+            <button type="button" onclick="count()">Count</button>
+        </form>
+        <div class="result flex flex-wrap">
+            <div class="w-full sm:w-1/2 md:w-auto">
+                <div class="counter-card">
+                    <p class="text-4xl font-bold"><span id="letterCount">0</span></p>
+                    <h4 class="text-lg">Letters</h4>
+                </div>
+            </div> 
+            <div class="w-full sm:w-1/2 md:w-auto">
+                <div class="counter-card">
+                 <p class="text-4xl font-bold"><span id="wordCount">0</span></p>
+                 <h4 class="text-lg">Words</h4>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-auto">
+                <div class="counter-card">
+                    <p class="text-4xl font-bold"><span id="sentenceCount">0</span></p> 
+                    <h4 class="text-lg ">Sentences</h4>
+                </div>
+            </div>
+        </div>
+
+        
+            <table class="table table-auto border m-6">
+                <thead>
+                    <tr>
+                        <th class="border px-4 py-2 w-1/3">Name</th>
+                        <th class="border px-4 py-2">Min/Max</th>
+                        <th class="border px-4 py-2">Limit</th>
+                        <th class="border px-4 py-2">Type</th>
+                        <th class="border px-4 py-2">Current Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td  class="border px-4 py-2 w-1/3">Meta Title</td>
+                        <td class="border px-4 py-2">Max</td>
+                        <td class="border px-4 py-2" >55</td>
+                        <td class="border px-4 py-2">Letter</td>
+                        <td id="metaTitleStatus" class="border px-4 py-2 font-semibold">Empty</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2 w-1/3">Meta Description</td>
+                        <td class="border px-4 py-2">Max</td>
+                        <td class="border px-4 py-2">160</td>
+                        <td class="border px-4 py-2">Letter</td>
+                        <td id="metaDescriptionStatus" class="border px-4 py-2 font-semibold">Empty</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2 w-1/3">Google Ideal Post Content</td>
+                        <td class="border px-4 py-2">Min</td>
+                        <td class="border px-4 py-2">300</td>
+                        <td class="border px-4 py-2">Word</td>
+                        <td id="googlePostStatus" class="border px-4 py-2 font-semibold">Empty</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2 w-1/3">Instagram Captions/ Comments</td>
+                        <td class="border px-4 py-2">Max</td>
+                        <td class="border px-4 py-2">2200</td>
+                        <td class="border px-4 py-2">Letter</td>
+                        <td id="instagramStatus" class="border px-4 py-2 font-semibold">Empty</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2 w-1/3">Twitter Post</td>
+                        <td class="border px-4 py-2">Max</td>
+                        <td class="border px-4 py-2">280</td>
+                        <td class="border px-4 py-2">Letter</td>
+                        <td id="twitterPostStatus" class="border px-4 py-2 font-semibold">Empty</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2 w-1/3">Twitter Username</td>
+                        <td class="border px-4 py-2">Max</td>
+                        <td class="border px-4 py-2">20</td>
+                        <td class="border px-4 py-2">Letter</td>
+                        <td id="twitterUsernameStatus" class="border px-4 py-2 font-semibold">Empty</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2 w-1/3">Facebook Wall Post (Truncation)</td>
+                        <td class="border px-4 py-2">Max</td>
+                        <td class="border px-4 py-2">477</td>
+                        <td class="border px-4 py-2">Letter</td>
+                        <td id="facebookWallTruncationStatus" class="border px-4 py-2 font-semibold">Empty</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2 w-1/3">Facebook Wall Post (All)</td>
+                        <td class="border px-4 py-2">Max</td>
+                        <td class="border px-4 py-2">63206</td>
+                        <td class="border px-4 py-2">Letter</td>
+                        <td id="facebookWallAllStatus" class="border px-4 py-2 font-semibold">Empty</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2 w-1/3">Facebook Comment</td>
+                        <td class="border px-4 py-2">Max</td>
+                        <td class="border px-4 py-2">8000</td>
+                        <td class="border px-4 py-2">Letter</td>
+                        <td id="facebookCommentStatus" class="border px-4 py-2 font-semibold">Empty</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2 w-1/3">Facebook Page Description</td>
+                        <td class="border px-4 py-2">Max</td>
+                        <td class="border px-4 py-2">255</td>
+                        <td class="border px-4 py-2">Letter</td>
+                        <td id="facebookPageDescriptionStatus" class="border px-4 py-2 font-semibold">Empty</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2 w-1/3">Facebook Username</td>
+                        <td class="border px-4 py-2">Max</td>
+                        <td class="border px-4 py-2">50</td>
+                        <td class="border px-4 py-2">Letter</td>
+                        <td class="border px-4 py-2 font-semibold" id="facebookUsernameStatus">Empty</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2 w-1/3">Facebook Messenger Message</td>
+                        <td class="border px-4 py-2">Max</td>
+                        <td class="border px-4 py-2">20000</td>
+                        <td class="border px-4 py-2">Letter</td>
+                        <td class="border px-4 py-2 font-semibold" id="facebookMessengerStatus">Empty</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2 w-1/3">YouTube Video Title</td>
+                        <td class="border px-4 py-2">Max</td>
+                        <td class="border px-4 py-2">70</td>
+                        <td class="border px-4 py-2">Letter</td>
+                        <td class="border px-4 py-2 font-semibold" id="youtubeVideoTitleStatus">Empty</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2 w-1/3">YouTube Video Description</td>
+                        <td class="border px-4 py-2">Max</td>
+                        <td class="border px-4 py-2">5000</td>
+                        <td class="border px-4 py-2">Letter</td>
+                        <td class="border px-4 py-2 font-semibold" id="youtubeVideoDescriptionStatus">Empty</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2 w-1/3">Snapchat Caption</td>
+                        <td class="border px-4 py-2">Max</td>
+                        <td class="border px-4 py-2">250</td>
+                        <td class="border px-4 py-2">Letter</td>
+                        <td class="border px-4 py-2 font-semibold" id="snapchatCaptionStatus">Empty</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2 w-1/3">Pinterest Pin Description</td>
+                        <td class="border px-4 py-2">Max</td>
+                        <td class="border px-4 py-2">500</td>
+                        <td class="border px-4 py-2">Letter</td>
+                        <td class="border px-4 py-2 font-semibold" id="pinterestPinDescriptionStatus">Empty</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
