@@ -14,6 +14,7 @@ var youtubeVideoTitleLimit = 70;
 var youtubeVideoDescriptionLimit = 5000;
 var snapchatCaptionLimit = 250;
 var pinterestPinDescriptionLimit = 500;
+
 function count() {
 var text = document.getElementById('inputText').value;
 

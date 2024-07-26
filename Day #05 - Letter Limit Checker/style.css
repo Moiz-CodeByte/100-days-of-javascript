@@ -9,7 +9,7 @@ body {
    max-width: 900px;
    margin: 0 auto;
    padding: 20px;
-   background: rgba(255, 255, 255, 0.3);
+   background: rgba(255, 255, 255, 0.2);
    backdrop-filter: blur(5px);
    border-radius: 10px;
 }
@@ -27,7 +27,7 @@ form {
 }
 
 textarea {
-   width: 100%;
+   width: 98%;
    padding: 10px;
    border: 1px solid #ccc;
    border-radius: 6px;
@@ -102,6 +102,7 @@ button:hover {
 
 .table-container {
    overflow-x: auto;
+
 }
 
 table {
@@ -126,6 +127,23 @@ table th {
 table td {
    font-size: 1em;
 }
+
+
+
+        .table-container::-webkit-scrollbar {
+         height: 8px;
+     }
+
+     .table-container::-webkit-scrollbar-thumb {
+         background-color: #888;
+         border-radius: 10px;
+     }
+
+     .table-container::-webkit-scrollbar-track {
+         background-color: #f1f1f1;
+     }
+
+     
 
 @media (max-width: 769px) {
    .counter-card {
