@@ -1,7 +1,5 @@
 # Day #4
 
-### Case Converter
-
 # Case Converter
 
 ![Case Converter](screenshot.png)
