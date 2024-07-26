@@ -9,7 +9,7 @@ body {
    max-width: 900px;
    margin: 0 auto;
    padding: 20px;
-   background: rgba(255, 255, 255, 0.2);
+   background: rgba(255, 255, 255, 0.3);
    backdrop-filter: blur(5px);
    border-radius: 10px;
 }
@@ -27,7 +27,7 @@ form {
 }
 
 textarea {
-   width: 98%;
+   width: 100%;
    padding: 10px;
    border: 1px solid #ccc;
    border-radius: 6px;
@@ -98,6 +98,10 @@ button:hover {
    margin-bottom: 0;
    font-weight: bold;
    color: #333;
+}
+
+.table-container {
+   overflow-x: auto;
 }
 
 table {
