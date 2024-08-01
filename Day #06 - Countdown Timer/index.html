@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>Countdown Timer</h1>
-        <input type="number" id="minutes" placeholder="Minutes" min="0">
-        <input type="number" id="seconds" placeholder="Seconds" min="0" max="59">
-        <button onclick="startTimer()">Start</button>
+        <div class="form-group">
+            <input type="number" id="minutes" class="form-control" placeholder="Minutes" min="0">
+            <input type="number" id="seconds" class="form-control" placeholder="Seconds" min="0" max="59">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-secondary" onclick="startTimer()">Start</button>
+        </div>
         <div id="timer">00:00</div>
     </div>
     <script src="script.js"></script>
