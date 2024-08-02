@@ -6,7 +6,8 @@ function startTimer() {
     const totalSeconds = minutes * 60 + seconds;
 
     if (totalSeconds <= 0) {
-        alert("Please enter a valid time.");
+      //  alert("");
+        showUserMessage("Please enter a valid time.", "error" )
         return;
     }
 
@@ -19,7 +20,8 @@ function startTimer() {
 
         if (secondsLeft <= 0) {
             clearInterval(countdown);
-            alert("Time's up!");
+            showUserMessage("Time's up!" , "success")
+            //alert("Time's up!");
             displayTimeLeft(0);
             return;
         }
@@ -34,3 +36,15 @@ function displayTimeLeft(seconds) {
     const display = `${minutes < 10 ? '0' : ''}${minutes}:${remainderSeconds < 10 ? '0' : ''}${remainderSeconds}`;
     document.getElementById('timer').textContent = display;
 }
+
+function showUserMessage(message, type) {
+    var messageContainer = document.createElement("div");
+    messageContainer.className = "user-message " + type;
+    messageContainer.textContent = message;
+    document.body.appendChild(messageContainer);
+  
+    setTimeout(function() {
+      messageContainer.remove();
+    }, 3000);
+  }
+  

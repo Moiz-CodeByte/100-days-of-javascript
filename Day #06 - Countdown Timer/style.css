@@ -47,3 +47,27 @@ h1 {
     font-size: 2rem;
     margin-top: 20px;
 }
+
+.user-message {
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .success {
+    background-color: #767676;
+  }
+  
+  .reset {
+    background-color: #DC3545;
+  }
+  
+  .error {
+    background-color: #dc3545;
+  }
+  
