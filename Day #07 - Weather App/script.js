@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiKey = 'YOUR-API-KEY';
+    const apiKey = 'a6b1777e22404254906101233240408';
 
     document.getElementById('search-form').addEventListener('submit', function(event) {
         event.preventDefault();
@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementById('pressure-mb').textContent = pressureMb;
 
                 const infoHTML = `
-                    <div>Country: ${data.location.country}</div>
-                    <div>Region: ${data.location.region}</div>
-                    <div>Lat/Lon: ${data.location.lat}, ${data.location.lon}</div>
-                    <div>Current time: ${data.location.localtime}</div>
-                    <div>Time Zone ID: ${data.location.tz_id}</div>
+                    <div><b>Country: </b> ${data.location.country}</div>
+                    <div><b>Region: </b>${data.location.region}</div>
+                    <div><b>Lat/Lon: </b>${data.location.lat}, ${data.location.lon}</div>
+                    <div><b>Current time:</b> ${data.location.localtime}</div>
+                    <div><b>Time Zone ID: </b> ${data.location.tz_id}</div>
                 `;
                 document.getElementById('info').innerHTML = infoHTML;
 
