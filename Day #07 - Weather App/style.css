@@ -7,11 +7,15 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #f3f3f3 0%, #e6e6e6 100%);
+    background: #f7592b;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+h1,h2{
+    margin-bottom: 10px;
 }
 
 .weather-app {
@@ -20,17 +24,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 90%;
-    max-width: 400px;
-    text-align: center;
+    max-width: 600px;
 }
 
 header {
-    background: #007BFF;
-    color: white;
+    background: white;
+    color: black;
     padding: 20px;
-}
-
-header h1 {
+    text-align: center; 
     margin-bottom: 10px;
 }
 
@@ -45,37 +46,43 @@ header h1 {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    width: 60%;
+    width: 70%;
 }
 
 #search-form button {
     padding: 10px 20px;
-    background: white;
+    background: #f7592b;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    color: #007BFF;
+    color: white;
     font-weight: bold;
 }
 
 #search-form button:hover {
-    background: #0056b3;
-    color: white;
+    background: #e6e6e6;
+    color: #f7592b;
 }
 
 main {
     padding: 20px;
 }
 
-.current-weather, .forecast, .additional-info {
+.current-weather, .additional-info {
     margin-bottom: 20px;
     display: none; /* Initially hide these sections */
+}
+
+.weather-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .weather-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Align weather info to the left */
 }
 
 .weather-info div, .weather-info img {
@@ -87,10 +94,6 @@ main {
     height: 64px;
 }
 
-footer {
-    background: #007BFF;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid #0056b3;
+.additional-info {
+    text-align: right; /* Align additional info to the right */
 }

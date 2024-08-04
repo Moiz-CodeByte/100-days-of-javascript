@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiKey = '';
+    const apiKey = 'YOUR-API-KEY';
 
     document.getElementById('search-form').addEventListener('submit', function(event) {
         event.preventDefault();
@@ -25,14 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementById('temperature').textContent = tempC;
                 document.getElementById('condition').textContent = condition;
                 document.getElementById('condition-icon').src = `https:${conditionIcon}`;
-
-                const outlookHTML = `
-                    <div>Weather is ${condition}</div>
-                    <div>Wind: ${windKph} kmph</div>
-                    <div>Pressure: ${pressureMb} mb</div>
-                    <div>Temperature: ${tempC} °c</div>
-                `;
-                document.getElementById('outlook').innerHTML = outlookHTML;
+                document.getElementById('wind-kph').textContent = windKph;
+                document.getElementById('pressure-mb').textContent = pressureMb;
 
                 const infoHTML = `
                     <div>Country: ${data.location.country}</div>
@@ -40,14 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div>Lat/Lon: ${data.location.lat}, ${data.location.lon}</div>
                     <div>Current time: ${data.location.localtime}</div>
                     <div>Time Zone ID: ${data.location.tz_id}</div>
-                    <div>Sunrise: 6:01 am</div>
-                    <div>Sunset: 7:15 pm</div>
                 `;
                 document.getElementById('info').innerHTML = infoHTML;
 
                 // Show the weather data sections
                 document.querySelector('.current-weather').style.display = 'block';
-                document.querySelector('.forecast').style.display = 'block';
                 document.querySelector('.additional-info').style.display = 'block';
             })
             .catch(error => console.error('Error fetching weather data:', error));
