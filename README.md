@@ -6,6 +6,7 @@
 ##  [Letter Limit Checker](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2305%20-%20Letter%20Limit%20Checker/)
 ##  [Countdown Timer](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2306%20-%20Countdown%20Timer/)
 
+##  [Weather App](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2307%20-%20Weather%20App/)
 
 
 
