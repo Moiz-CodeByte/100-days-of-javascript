@@ -1,0 +1,96 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f3f3f3 0%, #e6e6e6 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-app {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#city-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+}
+
+#search-form button {
+    padding: 10px 20px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+#search-form button:hover {
+    background: #0056b3;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+.current-weather, .forecast, .additional-info {
+    margin-bottom: 20px;
+    display: none; /* Initially hide these sections */
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-info div, .weather-info img {
+    margin: 10px 0;
+}
+
+#condition-icon {
+    width: 64px;
+    height: 64px;
+}
+
+footer {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #0056b3;
+}
