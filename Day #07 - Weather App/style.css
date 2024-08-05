@@ -97,3 +97,9 @@ main {
 .additional-info {
     text-align: right; /* Align additional info to the right */
 }
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    display: none; 
+}
