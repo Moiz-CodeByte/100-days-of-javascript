@@ -1,4 +1,3 @@
-Here's a README file for your Countdown Timer project:
 
 # Day #06
 
