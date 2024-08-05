@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiKey = '';
-      //generate api by going to this url sign in and copy the api key and paste there https://www.weatherapi.com/my/
+    const apiKey = 'your_api_key_here';
+    //generate api by going to this url sign in and copy the api key and paste there https://www.weatherapi.com/my/
 
     document.getElementById('search-form').addEventListener('submit', function(event) {
         event.preventDefault();
