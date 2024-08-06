@@ -8,7 +8,7 @@
 
 ##  [Weather App](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2307%20-%20Weather%20App/)
 
-
+##  [Calculator](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2308%20-%20Calculator/)
 
 ## Live Demo
 You can see the Projects live listing at [Link](https://moiz-codebyte.github.io/100-days-of-javascript/)
