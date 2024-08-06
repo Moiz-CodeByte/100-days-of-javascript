@@ -27,7 +27,7 @@ function calculateResult() {
 function calculatePercentage() {
     var result = document.getElementById('result').value;
     if (result) {
-        var percentageResult = eval(result) / 100;
+        var percentageResult = eval(result) * 100;
         document.getElementById('result').value = percentageResult;
         addHistory(result + ' = ' + percentageResult);
     }
