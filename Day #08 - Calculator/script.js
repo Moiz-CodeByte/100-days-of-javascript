@@ -19,3 +19,10 @@ function calculateResult() {
         document.getElementById('result').value = 'Error';
     }
 }
+
+function calculatePercentage() {
+    var result = document.getElementById('result').value;
+    if (result) {
+        document.getElementById('result').value = eval(result) / 100;
+    }
+}

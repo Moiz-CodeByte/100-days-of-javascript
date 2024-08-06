@@ -12,12 +12,31 @@ body {
     background-color: #f7592b;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 60vmin;
+    height: auto;
+    border-radius: 8px;
+    padding: 20px 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.headline {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2b2b2b;
+}
+
 .calculator {
     width: 100%;
     max-width: 400px;
     background: #2b2b2b;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
@@ -51,7 +70,7 @@ button {
     color: #fff;
     outline: none;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: all 1s ease-out;
 }
 
 button:hover {
