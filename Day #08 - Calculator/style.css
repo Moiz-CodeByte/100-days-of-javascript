@@ -18,7 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    width: 60vmin;
+    width: 80vmin;
     height: auto;
     border-radius: 8px;
     padding: 20px 30px;
@@ -83,4 +83,40 @@ button.equal {
 
 button.equal:hover {
     background: #e67e22;
+}
+
+button.history {
+    background: #3498db;
+}
+svg{
+    width: 20px;
+    height: 20px;
+    color: #fff;
+}
+
+button.history:hover {
+    background: #2980b9;
+}
+
+.history-container {
+    margin-top: 20px;
+    display: none;
+}
+
+.history-container h2 {
+    margin-bottom: 10px;
+}
+
+.history-container ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.history-container li {
+    background: #f1f1f1;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
 }
