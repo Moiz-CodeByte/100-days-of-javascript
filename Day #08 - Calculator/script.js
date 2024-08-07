@@ -27,9 +27,13 @@ function calculateResult() {
 function calculatePercentage() {
     var result = document.getElementById('result').value;
     if (result) {
-        var percentageResult = eval(result) * 100;
-        document.getElementById('result').value = percentageResult;
-        addHistory(result + ' = ' + percentageResult);
+        try {
+            var percentageResult = eval(result) / 100;
+            document.getElementById('result').value = percentageResult;
+            addHistory(result + ' = ' + percentageResult);
+        } catch (error) {
+            document.getElementById('result').value = 'Error';
+        }
     }
 }
 
