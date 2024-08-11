@@ -10,5 +10,7 @@
 
 ##  [Calculator](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2308%20-%20Calculator/)
 
+##  [Random Quote Generator](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2309%20-%20Random%20Quote%20Generator/)
+
 ## Live Demo
 You can see the Projects live listing at [Link](https://moiz-codebyte.github.io/100-days-of-javascript/)
