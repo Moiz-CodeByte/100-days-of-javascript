@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     result.textContent = 'Error fetching data';
                 });
         } else {
-            result.textContent = 'Please fill in all fields';
+            result.textContent = 'Please enter value you want to convert';
         }
     });
 });
