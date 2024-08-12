@@ -24,6 +24,7 @@ h2 {
 .currency-options {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
 }
 
@@ -32,7 +33,7 @@ select, input {
     width: 100px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 button {
@@ -45,7 +46,20 @@ button {
 }
 
 button:hover {
-    background-color: #eb4817;
+    background-color: #f7592b;
+}
+
+#swap {
+    background-color: #f7592b;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 40px;
+    border-radius: 20%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .converted-value {

@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const amountInput = document.getElementById('amount');
     const result = document.getElementById('result');
     const convertButton = document.getElementById('convert');
+    const swapButton = document.getElementById('swap');
 
     // Fetch currency options and populate the select elements
     fetch(apiURL)
@@ -22,6 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 toCurrency.appendChild(option2);
             });
         });
+
+    // Swap currencies
+    swapButton.addEventListener('click', () => {
+        const temp = fromCurrency.value;
+        fromCurrency.value = toCurrency.value;
+        toCurrency.value = temp;
+        result.textContent = '';
+    });
 
     // Convert currency
     convertButton.addEventListener('click', () => {
