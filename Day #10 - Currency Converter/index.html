@@ -7,7 +7,22 @@
     <title>Currency Converter | MoizCodeByte</title>
 </head>
 <body>
-    
+    <div class="converter">
+        <h2>Currency Converter</h2>
+        <input type="number" id="amount" placeholder="Enter amount" />
+        
+        <div class="currency-options">
+            <select id="fromCurrency"></select>
+            <span>to</span>
+            <select id="toCurrency"></select>
+        </div>
+        
+        <div class="converted-value">
+            <p id="result"></p>
+        </div>
+
+        <button id="convert">Convert</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
