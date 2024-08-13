@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiKey = '';
-    const apiURL = `https://api.exchangeratesapi.io/v1/latest?access_key=${apiKey}`;
     //https://manage.exchangeratesapi.io/dashboard
+   //Generate api key from here.Choose free plan and replace you-api-key with generated api key
+    const apiKey = 'your-api-key';
+    const apiURL = `https://api.exchangeratesapi.io/v1/latest?access_key=${apiKey}`;
     const fromCurrency = document.getElementById('fromCurrency');
     const toCurrency = document.getElementById('toCurrency');
     const amountInput = document.getElementById('amount');
