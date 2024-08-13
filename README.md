@@ -12,5 +12,7 @@
 
 ##  [Random Quote Generator](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2309%20-%20Random%20Quote%20Generator/)
 
+##  [Day #10 - Currency Converter](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2310%20-%20Currency%20Converter/)
+
 ## Live Demo
 You can see the Projects live listing at [Link](https://moiz-codebyte.github.io/100-days-of-javascript/)
