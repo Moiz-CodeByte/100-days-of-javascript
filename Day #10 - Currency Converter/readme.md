@@ -2,7 +2,7 @@
 
 # Currency Converter
 
-![Currency Converter](screenshot.png)
+![Currency Converter](screenshot.jpeg)
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -36,7 +36,7 @@ The **Currency Converter** is a web application that allows users to convert bet
 3. Open `index.html` in your web browser.
 
 ### Replace the API Key
-Before running the application, replace the `apiKey` constant in `script.js` with your own API key from ExchangeRatesAPI:
+Before running the application, replace the `apiKey` constant in `script.js` with your own API key from [ExchangeRatesAPI](https://manage.exchangeratesapi.io/dashboard):
 
 ```javascript
 const apiKey = 'your_api_key_here';
