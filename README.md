@@ -14,5 +14,7 @@
 
 ##  [Day #10 - Currency Converter](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2310%20-%20Currency%20Converter/)
 
+##  [Day #11 - Markdown Previewer](https://moiz-codebyte.github.io/Day%20%2311%20-%20Markdown%20Previewer/)
+
 ## Live Demo
 You can see the Projects live listing at [Link](https://moiz-codebyte.github.io/100-days-of-javascript/)
