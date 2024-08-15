@@ -1,5 +1,3 @@
-Here's the README file for your Calculator project:
-
 # Day #08
 
 # Calculator
