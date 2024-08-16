@@ -133,8 +133,5 @@ function initGame() {
     createGrid();
 }
 
-<<<<<<< HEAD
+
 initGame();
-=======
-initGame();
->>>>>>> d356d960aeda2d0b57ba5db5aab56408f94664e1
