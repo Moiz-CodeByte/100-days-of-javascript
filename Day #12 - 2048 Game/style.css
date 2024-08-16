@@ -5,6 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+<<<<<<< HEAD
     background-color: #f7592b;
 }
 
@@ -14,6 +15,13 @@ body {
     border-radius: 15px;
     text-align: center;
 
+=======
+    background-color: #faf8ef;
+}
+
+.container {
+    text-align: center;
+>>>>>>> d356d960aeda2d0b57ba5db5aab56408f94664e1
 }
 
 .game-container {
@@ -60,4 +68,8 @@ body {
     margin-top: 20px;
     font-size: 24px;
     font-weight: bold;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d356d960aeda2d0b57ba5db5aab56408f94664e1
