@@ -127,11 +127,53 @@ document.addEventListener('keydown', (e) => {
     handleMove(e.keyCode);
 });
 
+// Add touch event listeners for mobile support
+let touchStartX = 0;
+let touchStartY = 0;
+let touchEndX = 0;
+let touchEndY = 0;
+
+function handleTouchStart(e) {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+}
+
+function handleTouchMove(e) {
+    touchEndX = e.touches[0].clientX;
+    touchEndY = e.touches[0].clientY;
+}
+
+function handleTouchEnd() {
+    const dx = touchEndX - touchStartX;
+    const dy = touchEndY - touchStartY;
+    const absDx = Math.abs(dx);
+    const absDy = Math.abs(dy);
+
+    if (Math.max(absDx, absDy) > 20) { // Swipe threshold
+        if (absDx > absDy) {
+            if (dx > 0) {
+                handleMove(39); // Swipe right
+            } else {
+                handleMove(37); // Swipe left
+            }
+        } else {
+            if (dy > 0) {
+                handleMove(40); // Swipe down
+            } else {
+                handleMove(38); // Swipe up
+            }
+        }
+    }
+}
+
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
+document.addEventListener('touchend', handleTouchEnd, false);
+
 function initGame() {
     generateRandom();
     generateRandom();
     createGrid();
 }
-
 
 initGame();
