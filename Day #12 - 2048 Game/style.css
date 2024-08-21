@@ -13,7 +13,8 @@ body {
     padding: 30px;
     border-radius: 15px;
     text-align: center;
-
+    width: 100%;
+    max-width: 500px;
 }
 
 .game-container {
@@ -26,24 +27,28 @@ body {
 
 #grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 10px;
+    width: 100%;
+    max-width: 400px;
 }
 
+/* Ensure grid cells maintain a square aspect ratio */
 .grid-cell {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    padding-bottom: 100%; /* Creates a square aspect ratio */
     background-color: #cdc1b4;
     border-radius: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 1.5rem; /* Adjust font size for better visibility */
     font-weight: bold;
     color: #776e65;
 }
 
+/* Color specific rules for different cell values */
 .grid-cell[data-value="2"] { background-color: #eee4da; color: #776e65; }
 .grid-cell[data-value="4"] { background-color: #ede0c8; color: #776e65; }
 .grid-cell[data-value="8"] { background-color: #f2b179; color: #f9f6f2; }
@@ -58,6 +63,6 @@ body {
 
 .score-container {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 1.5rem; /* Adjusted for better readability on mobile */
     font-weight: bold;
 }

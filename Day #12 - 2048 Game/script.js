@@ -130,20 +130,16 @@ document.addEventListener('keydown', (e) => {
 // Add touch event listeners for mobile support
 let touchStartX = 0;
 let touchStartY = 0;
-let touchEndX = 0;
-let touchEndY = 0;
 
 function handleTouchStart(e) {
     touchStartX = e.touches[0].clientX;
     touchStartY = e.touches[0].clientY;
 }
 
-function handleTouchMove(e) {
-    touchEndX = e.touches[0].clientX;
-    touchEndY = e.touches[0].clientY;
-}
+function handleTouchEnd(e) {
+    const touchEndX = e.changedTouches[0].clientX;
+    const touchEndY = e.changedTouches[0].clientY;
 
-function handleTouchEnd() {
     const dx = touchEndX - touchStartX;
     const dy = touchEndY - touchStartY;
     const absDx = Math.abs(dx);
@@ -167,7 +163,6 @@ function handleTouchEnd() {
 }
 
 document.addEventListener('touchstart', handleTouchStart, false);
-document.addEventListener('touchmove', handleTouchMove, false);
 document.addEventListener('touchend', handleTouchEnd, false);
 
 function initGame() {
