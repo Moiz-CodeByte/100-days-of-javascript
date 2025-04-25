@@ -6,23 +6,32 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f7592b;
+    touch-action: none; /* Prevent browser handling of touch events */
 }
 
 .container {
     background-color: white;
-    padding: 30px;
+    padding: 20px;
     border-radius: 15px;
     text-align: center;
-    width: 100%;
+    width: 95%;
     max-width: 500px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2rem;
 }
 
 .game-container {
     background-color: #bbada0;
     border-radius: 6px;
-    padding: 20px;
+    padding: 15px;
     margin: 0 auto;
     display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #grid-container {
@@ -31,21 +40,39 @@ body {
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
     width: 100%;
-    max-width: 400px;
+    aspect-ratio: 1/1; /* Ensure the entire grid is square */
 }
 
-/* Ensure grid cells maintain a square aspect ratio */
 .grid-cell {
+    position: relative;
     width: 100%;
-    padding-bottom: 100%; /* Creates a square aspect ratio */
     background-color: #cdc1b4;
     border-radius: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem; /* Adjust font size for better visibility */
     font-weight: bold;
     color: #776e65;
+    aspect-ratio: 1/1; /* Each cell is a perfect square */
+    user-select: none; /* Prevent text selection during swipes */
+}
+
+.grid-cell::before {
+    content: attr(data-value);
+    font-size: 1.5rem;
+    position: absolute;
+}
+
+/* Responsive font sizes based on cell values */
+.grid-cell[data-value="128"]::before,
+.grid-cell[data-value="256"]::before,
+.grid-cell[data-value="512"]::before {
+    font-size: 1.3rem;
+}
+
+.grid-cell[data-value="1024"]::before,
+.grid-cell[data-value="2048"]::before {
+    font-size: 1.1rem;
 }
 
 /* Color specific rules for different cell values */
@@ -63,6 +90,45 @@ body {
 
 .score-container {
     margin-top: 20px;
-    font-size: 1.5rem; /* Adjusted for better readability on mobile */
+    font-size: 1.5rem;
     font-weight: bold;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .game-container {
+        padding: 10px;
+    }
+    
+    #grid-container {
+        gap: 5px;
+    }
+    
+    .grid-cell::before {
+        font-size: 1.2rem;
+    }
+    
+    .grid-cell[data-value="128"]::before,
+    .grid-cell[data-value="256"]::before,
+    .grid-cell[data-value="512"]::before {
+        font-size: 1rem;
+    }
+    
+    .grid-cell[data-value="1024"]::before,
+    .grid-cell[data-value="2048"]::before {
+        font-size: 0.9rem;
+    }
+    
+    .score-container {
+        font-size: 1.2rem;
+    }
 }

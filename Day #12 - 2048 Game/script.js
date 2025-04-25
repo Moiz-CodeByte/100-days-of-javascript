@@ -15,8 +15,9 @@ function createGrid() {
             const cell = document.createElement('div');
             cell.classList.add('grid-cell');
             if (grid[i][j] !== 0) {
-                cell.textContent = grid[i][j];
                 cell.setAttribute('data-value', grid[i][j]);
+            } else {
+                cell.removeAttribute('data-value');
             }
             gridContainer.appendChild(cell);
         }
@@ -132,11 +133,15 @@ let touchStartX = 0;
 let touchStartY = 0;
 
 function handleTouchStart(e) {
+    e.preventDefault(); // Prevent default browser handling
     touchStartX = e.touches[0].clientX;
     touchStartY = e.touches[0].clientY;
 }
 
 function handleTouchEnd(e) {
+    e.preventDefault(); // Prevent default browser handling
+    if (!touchStartX || !touchStartY) return; // Exit if we didn't get a valid start position
+    
     const touchEndX = e.changedTouches[0].clientX;
     const touchEndY = e.changedTouches[0].clientY;
 
@@ -145,7 +150,7 @@ function handleTouchEnd(e) {
     const absDx = Math.abs(dx);
     const absDy = Math.abs(dy);
 
-    if (Math.max(absDx, absDy) > 20) { // Swipe threshold
+    if (Math.max(absDx, absDy) > 10) { // Lower swipe threshold for better responsiveness
         if (absDx > absDy) {
             if (dx > 0) {
                 handleMove(39); // Swipe right
@@ -160,10 +165,27 @@ function handleTouchEnd(e) {
             }
         }
     }
+    
+    // Reset touch coordinates
+    touchStartX = 0;
+    touchStartY = 0;
 }
 
-document.addEventListener('touchstart', handleTouchStart, false);
-document.addEventListener('touchend', handleTouchEnd, false);
+// Use touchmove to prevent scrolling while swiping
+function handleTouchMove(e) {
+    if (touchStartX && touchStartY) {
+        e.preventDefault(); // Prevent scrolling
+    }
+}
+
+// Remove previous touch listeners if they exist
+document.removeEventListener('touchstart', handleTouchStart);
+document.removeEventListener('touchend', handleTouchEnd);
+
+// Add improved touch event listeners
+document.addEventListener('touchstart', handleTouchStart, {passive: false});
+document.addEventListener('touchend', handleTouchEnd, {passive: false});
+document.addEventListener('touchmove', handleTouchMove, {passive: false});
 
 function initGame() {
     generateRandom();
