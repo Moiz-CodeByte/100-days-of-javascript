@@ -2,6 +2,8 @@
 
 # 2048 Game
 
+![2048 Game](screenshot.png)
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
