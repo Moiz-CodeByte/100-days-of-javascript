@@ -1,5 +1,8 @@
 const gridContainer = document.getElementById('grid-container');
 const scoreContainer = document.getElementById('score');
+const gameOverModal = document.getElementById('game-over-modal');
+const finalScoreSpan = document.getElementById('final-score');
+const restartButton = document.getElementById('restart-button');
 let score = 0;
 let grid = [
     [0, 0, 0, 0],
@@ -109,6 +112,31 @@ function isGameOver() {
     return true;
 }
 
+function showGameOverModal() {
+    finalScoreSpan.textContent = score;
+    gameOverModal.classList.add('show');
+}
+
+function resetGame() {
+    // Reset the grid
+    grid = [
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0]
+    ];
+    
+    // Reset score
+    score = 0;
+    scoreContainer.textContent = `Score: ${score}`;
+    
+    // Hide modal
+    gameOverModal.classList.remove('show');
+    
+    // Restart game
+    initGame();
+}
+
 function handleMove(keyCode) {
     let moved = false;
     if (keyCode === 37) moved = moveLeft();
@@ -119,7 +147,7 @@ function handleMove(keyCode) {
         generateRandom();
         createGrid();
         if (isGameOver()) {
-            alert('Game Over!');
+            showGameOverModal();
         }
     }
 }
@@ -194,3 +222,6 @@ function initGame() {
 }
 
 initGame();
+
+// Add event listener for restart button
+restartButton.addEventListener('click', resetGame);

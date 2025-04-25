@@ -132,3 +132,105 @@ h1 {
         font-size: 1.2rem;
     }
 }
+
+/* Game Over Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    animation: fadeIn 0.3s;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 90%;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+    animation: scaleIn 0.3s forwards;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+}
+
+.modal h2 {
+    color: #f7592b;
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.modal p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+#final-score {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #f7592b;
+}
+
+#restart-button {
+    background-color: #f7592b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+#restart-button:hover {
+    background-color: #e54b1f;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}
+
+/* Media query adjustments for the modal on small screens */
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 20px;
+        width: 280px;
+    }
+    
+    .modal h2 {
+        font-size: 1.6rem;
+    }
+    
+    .modal p {
+        font-size: 1rem;
+    }
+    
+    #restart-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
