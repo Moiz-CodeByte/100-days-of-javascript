@@ -1,6 +1,18 @@
 # GitHub Profile Preview App
 
-A simple web application that allows users to search for GitHub profiles and view detailed information about users.
+A simple website that allows users to search for GitHub profiles and view detailed information about users.
+
+![GitHub Profile Preview](screenshot.png)
+
+## Table of Contents
+- [Features](#features)
+
+- [Technologies Used](#technologies-used)
+- [Usage](#usage)
+- [Api Information](#api-information)
+- [Contributing](#contributing)
+- [License](#license)
+- [Live Demo](#live-demo)
 
 ## Features
 
@@ -27,7 +39,7 @@ A simple web application that allows users to search for GitHub profiles and vie
 - GitHub REST API
 - Font Awesome for icons
 
-## How to Use
+## Usage
 
 1. Open the `index.html` file in your browser
 2. Enter a GitHub username in the search box
@@ -40,8 +52,38 @@ This app uses the GitHub REST API to fetch user data. No API key is required for
 
 API Endpoint used: `https://api.github.com/users/{username}`
 
-## Project Structure
 
-- `index.html` - Main HTML structure
-- `style.css` - CSS styling
-- `script.js` - JavaScript functionality and API integration 
+
+## Contributing
+Contributions are welcome! If you have any ideas, suggestions, or improvements, feel free to create a pull request or open an issue.
+
+### Steps to Contribute
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add your feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a pull request.
+
+### After Opening a Pull Request
+1. **Review**: Address any feedback or change requests made by the reviewers.
+2. **Approval**: Wait for the pull request to be approved by the maintainers.
+3. **Merge**: Once approved, the pull request will be merged by a maintainer.
+4. **Close**: The pull request will be closed upon merging. If not merged, it might be closed manually with an explanation.
+5. **Cleanup**: Delete your feature branch after the pull request is merged and update your local repository.
+
+## License
+This project is open-source and available under the [MIT License](LICENSE).
+
+## Live Demo
+You can see live at [Link](https://moiz-codebyte.github.io/100-days-of-javascriptDay%20%2313%20-%20GitHub%20Profile%20Preview/)
+
+For any questions or support, please contact at [hello@abdulmoiz.net](mailto:hello@abdulmoiz.net).

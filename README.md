@@ -16,7 +16,9 @@
 
 ##  [Day #11 - Markdown Previewer](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2311%20-%20Markdown%20Previewer/)
 
-##  [Day #11 - 2048 Game ](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2312%20-%202048%20Game/)
+##  [Day #12 - 2048 Game ](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2312%20-%202048%20Game/)
+
+## [ Day #13 - GitHub Profile Preview ](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2313%20-%20GitHub%20Profile%20Preview/)
 
 ## Live Demo
 You can see the Projects live listing at [Link](https://moiz-codebyte.github.io/100-days-of-javascript/)
