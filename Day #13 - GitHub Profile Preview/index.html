@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Preview |MoizCodeByte</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Profile Viewer</h1>
+        <div class="search-container">
+            <input type="text" id="username" placeholder="Enter GitHub username">
+            <button id="search-btn">Search</button>
+        </div>
+        <div id="profile-container" class="hidden">
+            <div class="profile-header">
+                <img id="avatar" src="" alt="User Avatar">
+                <div class="profile-info">
+                    <h2 id="name"></h2>
+                    <p id="login"></p>
+                    <p id="bio"></p>
+                    <a id="profile-link" href="#" target="_blank">View Profile</a>
+                </div>
+            </div>
+            <div class="stats-container">
+                <div class="stat">
+                    <i class="fas fa-users"></i>
+                    <span id="followers">0</span>
+                    <p>Followers</p>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-user-plus"></i>
+                    <span id="following">0</span>
+                    <p>Following</p>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-code-branch"></i>
+                    <span id="repos">0</span>
+                    <p>Repositories</p>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-code"></i>
+                    <span id="gists">0</span>
+                    <p>Gists</p>
+                </div>
+            </div>
+            <div class="additional-info">
+                <div class="info-item" id="location-container">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span id="location"></span>
+                </div>
+                <div class="info-item" id="company-container">
+                    <i class="fas fa-building"></i>
+                    <span id="company"></span>
+                </div>
+                <div class="info-item" id="blog-container">
+                    <i class="fas fa-link"></i>
+                    <a id="blog" href="#" target="_blank"></a>
+                </div>
+                <div class="info-item" id="twitter-container">
+                    <i class="fab fa-twitter"></i>
+                    <a id="twitter" href="#" target="_blank"></a>
+                </div>
+                <div class="info-item" id="created-container">
+                    <i class="fas fa-calendar"></i>
+                    <span id="created-at"></span>
+                </div>
+                
+            </div>
+        </div>
+        <div id="error-message" class="hidden">
+            <p>User not found. Please try another username.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
