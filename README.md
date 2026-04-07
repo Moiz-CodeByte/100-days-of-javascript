@@ -20,5 +20,7 @@
 
 ## [ Day #13 - GitHub Profile Preview ](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2313%20-%20GitHub%20Profile%20Preview/)
 
+## [ Day #14 - Password Generator ](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2314%20-%20Password%20Generator/)
+
 ## Live Demo
 You can see the Projects live listing at [Link](https://moiz-codebyte.github.io/100-days-of-javascript/)

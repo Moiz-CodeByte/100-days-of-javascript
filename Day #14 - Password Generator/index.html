@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <h1>Password Generator</h1>
+
+        <label for="length" class="field-label">Password Length: <span id="lengthValue">12</span></label>
+        <input type="range" id="length" min="6" max="32" value="12">
+
+        <div class="checks">
+            <label><input type="checkbox" id="uppercase" checked> Uppercase</label>
+            <label><input type="checkbox" id="lowercase" checked> Lowercase</label>
+            <label><input type="checkbox" id="numbers" checked> Numbers</label>
+            <label><input type="checkbox" id="symbols"> Symbols</label>
+        </div>
+
+        <div class="output-wrap">
+            <input type="text" id="password" readonly placeholder="Your password will appear here">
+            <button id="copyBtn" type="button">Copy</button>
+        </div>
+
+        <button id="generateBtn" type="button" class="generate">Generate Password</button>
+        <p id="message" aria-live="polite"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

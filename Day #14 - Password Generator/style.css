@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe2cc, #ffd0f6);
+    padding: 16px;
+}
+
+.card {
+    width: 100%;
+    max-width: 420px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: #222;
+    text-align: center;
+}
+
+.field-label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#length {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.checks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.checks label {
+    font-size: 14px;
+}
+
+.output-wrap {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+#password {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button {
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#copyBtn {
+    background-color: #f5f5f5;
+}
+
+.generate {
+    width: 100%;
+    background-color: #f7592b;
+    color: #fff;
+}
+
+#message {
+    min-height: 20px;
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
