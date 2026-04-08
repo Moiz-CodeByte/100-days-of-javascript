@@ -8,6 +8,8 @@ const passwordInput = document.getElementById("password");
 const generateBtn = document.getElementById("generateBtn");
 const copyBtn = document.getElementById("copyBtn");
 const message = document.getElementById("message");
+const strengthText = document.getElementById("strengthText");
+const strengthBar = document.getElementById("strengthBar");
 
 const chars = {
     uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -25,6 +27,35 @@ function getSelectedPool() {
     if (symbolsInput.checked) pool += chars.symbols;
 
     return pool;
+}
+
+function getStrengthLevel() {
+    let score = 0;
+    const length = Number(lengthInput.value);
+
+    if (length >= 10) score += 1;
+    if (length >= 14) score += 1;
+    if (uppercaseInput.checked) score += 1;
+    if (lowercaseInput.checked) score += 1;
+    if (numbersInput.checked) score += 1;
+    if (symbolsInput.checked) score += 1;
+
+    if (score <= 2) {
+        return { label: "Weak", width: "33%", color: "#e24a4a" };
+    }
+
+    if (score <= 4) {
+        return { label: "Medium", width: "66%", color: "#f0a500" };
+    }
+
+    return { label: "Strong", width: "100%", color: "#2ea043" };
+}
+
+function updateStrengthUI() {
+    const level = getStrengthLevel();
+    strengthText.textContent = level.label;
+    strengthBar.style.width = level.width;
+    strengthBar.style.backgroundColor = level.color;
 }
 
 function generatePassword() {
@@ -46,10 +77,16 @@ function generatePassword() {
 
     passwordInput.value = result;
     message.textContent = "Password generated.";
+    updateStrengthUI();
 }
 
 lengthInput.addEventListener("input", () => {
     lengthValue.textContent = lengthInput.value;
+    updateStrengthUI();
+});
+
+[uppercaseInput, lowercaseInput, numbersInput, symbolsInput].forEach((input) => {
+    input.addEventListener("change", updateStrengthUI);
 });
 
 generateBtn.addEventListener("click", generatePassword);
@@ -69,3 +106,4 @@ copyBtn.addEventListener("click", async () => {
 });
 
 generatePassword();
+updateStrengthUI();

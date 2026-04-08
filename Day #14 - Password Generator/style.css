@@ -57,6 +57,34 @@ h1 {
     margin-bottom: 14px;
 }
 
+.strength-wrap {
+    margin-bottom: 14px;
+}
+
+.strength-head {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.strength-track {
+    width: 100%;
+    height: 8px;
+    background: #ececec;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    transition: width 0.2s ease, background-color 0.2s ease;
+    background: #f0a500;
+}
+
 #password {
     width: 100%;
     padding: 10px;
