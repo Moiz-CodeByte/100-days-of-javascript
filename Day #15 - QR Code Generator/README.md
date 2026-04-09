@@ -14,6 +14,9 @@
 ## Introduction
 The **QR Code Generator** is a simple web tool that converts text or URLs into QR codes instantly. It is useful for quickly sharing links, messages, and other text data.
 
+![GitHub Profile Preview](screenshot.png)
+
+
 ## Features
 - Generate QR code from any text or URL
 - Clean and responsive interface

@@ -14,6 +14,9 @@
 ## Introduction
 The **Password Generator** is a web application that helps users create random passwords quickly. You can control length and character types to generate stronger passwords for daily use.
 
+![GitHub Profile Preview](screenshot.png)
+
+
 ## Features
 - Set password length from 6 to 32 characters
 - Include uppercase letters
