@@ -22,5 +22,7 @@
 
 ## [ Day #14 - Password Generator ](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2314%20-%20Password%20Generator/)
 
+## [ Day #15 - QR Code Generator ](https://moiz-codebyte.github.io/100-days-of-javascript/Day%20%2315%20-%20QR%20Code%20Generator/)
+
 ## Live Demo
 You can see the Projects live listing at [Link](https://moiz-codebyte.github.io/100-days-of-javascript/)

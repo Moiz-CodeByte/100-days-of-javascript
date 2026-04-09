@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #f7592b;
+    font-family: Arial, sans-serif;
+    padding: 16px;
+}
+
+.card {
+    width: 100%;
+    max-width: 440px;
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+}
+
+h1 {
+    margin: 0 0 16px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+    border: 1px solid #d5d5d5;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+button,
+.download {
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    padding: 11px 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button {
+    background: #f7592b;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.preview {
+    min-height: 220px;
+    border: 1px dashed #ccc;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 12px;
+    padding: 12px;
+    background: #fafafa;
+}
+
+#qrImage {
+    max-width: 100%;
+    display: none;
+}
+
+.download {
+    background: #222;
+    color: #fff;
+    margin-bottom: 10px;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.download.active {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#message {
+    min-height: 20px;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
